@@ -16,6 +16,9 @@
   Price: {{ product.price }} $
 </p>
 
+<p *ngIf="product.price" style ="font-style:bold">
+Rate: {{ product.rating }} 
+</p>
 
 <a href = {{product.liunk}} ><button type="button" (click)="share()">
 Share
